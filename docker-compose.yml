@@ -7,3 +7,6 @@ services:
     command: make test
     volumes:
       - "./app:/app"
+      - node_modules:/app/node_modules
+volumes:
+  node_modules:
